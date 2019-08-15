@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">E-Recruitment BRI !</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Halaman Depan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--container---->
+    </nav>
+    <div class="orangeStrip"></div>
+
+    <section id="main">
+      <div class="padding-page">
+        <div class="row">
+          <div class="col-lg-3">
+            <button type="button" class="btn btn-secondary btn-lg" disabled>
+              Menu
+            </button>
+            <button type="button" class="btn btn-primary">Registrasi</button>
+            <button type="button" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-primary">Lupa Password</button>
+            <button type="button" class="btn btn-primary">
+              Kirim Ulang Aktivasi
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-lg" disabled>
+              Pengumuman
+            </button>
+            <button type="button" class="btn btn-primary">Kantor Pusat</button>
+            <div class="dropdown">
+              <button
+                class="btn btn-primary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <h4>Registrasi e-recruitment BRI</h4>
+            <hr />
+            <div class="alert alert-primary" role="alert">
+              Informasi !!! Data yang anda isi pada halaman ini tidak dapat
+              diubah, pastikan anda mengisi dengan benar.
+            </div>
+            <h4 class="label-identitas">Identitas Diri</h4>
+            <div class="padding-form">
+              <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Nomor KTP <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="ktp"
+                        placeholder="(16 Digit)"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Nama Lengkap <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="namaLengkap"
+                        placeholder="Nama Lengkap"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Nama Ibu Kandung
+                        <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="namaIbu"
+                        placeholder="Nama Ibu Kandung"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Tempat Lahir <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="tempatLahir"
+                        placeholder="Tempat Lahir"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Tanggal Lahir <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"
+                          ><span
+                            class="glyphicon glyphicon-calendar"
+                          ></span></span
+                        ><input
+                          type="text"
+                          name="tanggal_lahir"
+                          value=""
+                          id="tanggal_lahir"
+                          class="form-control filter input-sm trim input required datepicker"
+                          placeholder="Tanggal Lahir"
+                          readonly="readonly"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Jenis Kelamin<span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="">
+                        <input type="radio" name="options" id="option2" />
+                        Laki-Laki
+                      </label>
+                      <label class="">
+                        <input type="radio" name="options" id="option3" />
+                        Perempuan
+                      </label>
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Nomor Handphone <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="nomorHandphone"
+                        placeholder="Nomor Handphone GSM"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Alamat Email <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="email"
+                        placeholder="email"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Password <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <input
+                        type="password"
+                        class="form-control form-control-sm"
+                        id="password"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >Ulangi Password <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <input
+                        type="password"
+                        class="form-control form-control-sm"
+                        id="ulangPassword"
+                        placeholder="Ulangi Password"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+              </form>
+            </div>
+            <h4 class="label-identitas">Pendidikan Terakhir</h4>
+            <div class="padding-form">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Nomor Induk Mahasiswa
+                      <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="nim"
+                      placeholder="Nomor Induk Mahasiswa"
+                    />
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+            </div>
+            <!--end padding-form -->
+
+            <div class="padding-form">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Jenjang Pendidikan
+                      <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <select class="form-control form-control-sm" id="jenjang">
+                        <option>SMA/SMK</option>
+                        <option>S1</option>
+                        <option>S2</option>
+                        <option>S3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Perguruan Tinggi <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-lg-7">
+                    <div class="form-group">
+                      <select
+                        class="form-control form-control-sm"
+                        id="perguruan-tinggi"
+                      >
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Fakultas <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <select
+                        class="form-control form-control-sm"
+                        id="fakultas"
+                      >
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Jurusan / Program Studi
+                      <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="fakultas"
+                      placeholder="Fakultas"
+                    />
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Gelar <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="gelar"
+                      placeholder="Gelar"
+                    />
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Akreditasi Program Studi
+                      <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <select
+                        class="form-control form-control-sm"
+                        id="akreditasi"
+                      >
+                        <option>SMA/SMK</option>
+                        <option>S1</option>
+                        <option>S2</option>
+                        <option>S3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Tahun Masuk <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="tahunMasuk"
+                      placeholder="Tahun Masuk"
+                    />
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span style="float:left; width:90%;"
+                      >Tahun Keluar <span style="color: red">*</span></span
+                    >
+                    <span style="float:left; width:10%;">:</span>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="tahunMasuk"
+                      placeholder="Tahun Keluar"
+                    />
+                  </div>
+
+                  <div class="col-sm-3">
+                      <label class="">
+                          <input type="radio" name="options" id="belumLulus" />
+                          Belum Lulus
+                        </label>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!-- end form group-->
+
+
+              <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <span style="float:left; width:90%;"
+                        >IPK <span style="color: red">*</span></span
+                      >
+                      <span style="float:left; width:10%;">:</span>
+                    </div>
+  
+                    <div class="col-sm-2">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="IPK"
+                        placeholder="IPK"
+                      />
+                    </div>
+                  </div>
+                  <!--end row-->
+                </div>
+                <!-- end form group-->
+            </div>
+            <!--end padding-form -->
+
+            <div class="card-footer">
+              <small style="color:red;">* Isian identitas diri pada halaman ini tidak dapat di ubah, Silahkan isi dengan teliti</small>
+               <div style="float: right;" class="btn btn-primary">Daftar</div> 
+            </div>
+          </div>
+          <!--div col lg 9-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end padding-->
+      <div class="orangeStrip"></div>
+      <div class="footer">Created By : Anak Agung Gede Dimas Dananjaya</div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

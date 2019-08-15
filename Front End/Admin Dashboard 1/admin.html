@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Admin Dashboard Design</title>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<body>
+		<header>
+			<h3 class="text-center">Sistem Informasi</h3>
+			<img src="pic/team.png" class="img-responsive mx-auto d-block">
+		</header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarNavDropdown"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				<span>Menu</span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Tim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Permohonan</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div class="container">
+
+			<section id="upper">
+				<h3>Jumat,
+					<br>22 Desember 2016
+				</h3>
+			</section>
+
+			<section id="navigator">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<img class="img-responsive" src="pic/team1.png">
+								<p>
+									<a class="btn btn-outline-primary" href="#">36 Total</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<img class="img-responsive" src="pic/resume (1).png">
+								<p>
+									<a class="btn btn-outline-primary" href="#">5 Pendaftar Baru</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<img class="img-responsive" src="pic/network.png">
+								<p>
+									<a class="btn btn-outline-primary" href="#">10 Total Team</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="cms">
+				<h3>Daftar Permohonan</h3>
+				<hr>
+				<form class="form-group row">
+					<div class="col-lg-10">
+						<input class="form-control mr-sm-2" type="search" placeholder="Cari" aria-label="Search">
+					</div>
+					<div class="col-lg-2">
+						<button class="btn btn-outline-success my-2 my-sm-0" style="width: 100%;" type="submit">Search</button>
+					</div>
+				</form>
+				<div class="row">
+					<div class="col-lg-12">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>Nama</th>
+									<th>Instansi</th>
+									<th>Perihal</th>
+									<th>Waktu Dikirim</th>
+									<th>Berkas</th>
+									<th>Aksi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Dims</td>
+									<td>STIKOM Bali</td>
+									<td>Some Stuff</td>
+									<td>11-04-1997</td>
+									<td>
+										<a href="#" class="btn btn-success">Lihat Berkas</a>
+									</td>
+									<td>
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+										<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="container-fluid">
+														<div class="jarakCardModal">
+															<div class="card">
+																<div class="card-body">
+																	<div class="row">
+																		<div class="col-lg-3">
+																			<img class="mx-auto d-block" src="pic/employee.png" alt="card image">
+																		</div>
+																		<div class="col-lg-9">
+																			<h5 style="text-align: left;">Kerja Praktek</h5>
+																			<hr>
+																			<p>Nama: Dims</p>
+																			<p>Instansi : STIKOM Bali</p>
+																			<p>Waktu Mulai : 11-04-1997</p>
+																			<p>Waktu Selesai : 11-04-1997</p>
+																			<button class="btn btn-success">Terima</button>
+																			<button class="btn btn-success">Tolak</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Dims</td>
+									<td>STIKOM Bali</td>
+									<td>Some Stuff</td>
+									<td>11-04-1997</td>
+									<td>
+										<a href="#" class="btn btn-success">Lihat Berkas</a>
+									</td>
+									<td>
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+										<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="container-fluid">
+														<div class="jarakCardModal">
+															<div class="card">
+																<div class="card-body">
+																	<div class="row">
+																		<div class="col-lg-3">
+																			<img class="mx-auto d-block" src="pic/employee.png" alt="card image">
+																		</div>
+																		<div class="col-lg-9">
+																			<h5 style="text-align: left;">Kerja Praktek</h5>
+																			<hr>
+																			<p>Nama: Dims</p>
+																			<p>Instansi : STIKOM Bali</p>
+																			<p>Waktu Mulai : 11-04-1997</p>
+																			<p>Waktu Selesai : 11-04-1997</p>
+																			<button class="btn btn-success">Terima</button>
+																			<button class="btn btn-success">Tolak</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+					<hr>
+
+
+			</section>
+
+			<section id="adminTeam">
+				<h4>Data Team</h4>
+				<hr>
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-3">
+										<img class="mx-auto d-block" src="pic/employee.png" alt="card image">
+									</div>
+									<div class="col-lg-9">
+										<h5 style="text-align: left;">Bagian Keuangan</h5>
+
+										<p>Nama : Dims</p>
+										<p>Jumlah : 5</p>
+										<button class="btn btn-success btn-block">Detail</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-3">
+										<img class="mx-auto d-block" src="pic/employee.png" alt="card image">
+									</div>
+									<div class="col-lg-9">
+										<h5 style="text-align: left;">Bagian Keuangan</h5>
+
+										<p>Nama : Dims</p>
+										<p>Jumlah : 5</p>
+										<button class="btn btn-success btn-block">Detail</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-3">
+										<img class="mx-auto d-block" src="pic/employee.png" alt="card image">
+									</div>
+									<div class="col-lg-9">
+										<h5 style="text-align: left;">Bagian Keuangan</h5>
+
+										<p>Nama : Dims</p>
+										<p>Jumlah : 5</p>
+										<button class="btn btn-success btn-block">Detail</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-3">
+										<img class="mx-auto d-block" src="pic/employee.png" alt="card image">
+									</div>
+									<div class="col-lg-9">
+										<h5 style="text-align: left;">Bagian Keuangan</h5>
+
+										<p>Nama : Dims</p>
+										<p>Jumlah : 5</p>
+										<button class="btn btn-success btn-block">Detail</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+			</div>
+			<footer>
+				<h6>Created by Anak Agung Gede Dimas Dananjaya</h6>
+			</footer>
+
+
+
+
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			 crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+			 crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+			 crossorigin="anonymous"></script>
+	</body>
+
+</html>

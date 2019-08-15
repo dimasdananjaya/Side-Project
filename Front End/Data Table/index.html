@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Beranda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pangan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tanaman Pangan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pangan">
+                        <a class="dropdown-item" href="#">Padi</a>
+                        <a class="dropdown-item" href="#">Palawijaya</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="hortikultura" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Tanaman Hortikultura
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hortikultura">
+                        <a class="dropdown-item" href="#">Sayur</a>
+                        <a class="dropdown-item" href="#">Buah</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="dataTable">
+        <div class="container">
+            <img src="img/contract.png" class="img-responsive mx-auto d-block">
+            <p class="title lead">DATA KOMODITI UNGGULAN DAN ANDALAN PADI</p>
+            <hr>
+            <p class="sub-title">1. Perkembangan Luas Tanam Padi</p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" class="tahun">Tahun</th>
+                        <th scope="col">Denpasar</th>
+                        <th scope="col">Jembrana</th>
+                        <th scope="col">Tabanan</th>
+                        <th scope="col">Badung</th>
+                        <th scope="col">Buleleng</th>
+                        <th scope="col">Gianyar</th>
+                        <th scope="col">Bangli</th>
+                        <th scope="col">Klungkung</th>
+                        <th scope="col">Karangasem</th>
+                        <th scope="col">Bali</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Tahun" class="tahun">2001</td>
+                        <td data-label="Denpasar">11</td>
+                        <td data-label="Jembrana">22</td>
+                        <td data-label="Tabanan">2301</td>
+                        <td data-label="Badung">201</td>
+                        <td data-label="Buleleng">2401</td>
+                        <td data-label="Gianyar">2001</td>
+                        <td data-label="Bangli">101</td>
+                        <td data-label="Klungkung">1001</td>
+                        <td data-label="Karangasem">4001</td>
+                        <td data-label="Bali">3001</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Tahun" class="tahun">2001</td>
+                        <td data-label="Denpasar">11</td>
+                        <td data-label="Jembrana">22</td>
+                        <td data-label="Tabanan">2301</td>
+                        <td data-label="Badung">201</td>
+                        <td data-label="Buleleng">2401</td>
+                        <td data-label="Gianyar">2001</td>
+                        <td data-label="Bangli">101</td>
+                        <td data-label="Klungkung">1001</td>
+                        <td data-label="Karangasem">4001</td>
+                        <td data-label="Bali">3001</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Tahun" class="tahun">2001</td>
+                        <td data-label="Denpasar">11</td>
+                        <td data-label="Jembrana">22</td>
+                        <td data-label="Tabanan">2301</td>
+                        <td data-label="Badung">201</td>
+                        <td data-label="Buleleng">2401</td>
+                        <td data-label="Gianyar">2001</td>
+                        <td data-label="Bangli">101</td>
+                        <td data-label="Klungkung">1001</td>
+                        <td data-label="Karangasem">4001</td>
+                        <td data-label="Bali">3001</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="chart">
+        <div class="container">
+            <p>Bagan Perkembangan Luas Tanaman Padi :</p>
+            <canvas id="dataChart"></canvas>
+        </div>
+    </section>
+
+
+    <script>
+        let dataChart = document.getElementById('dataChart').getContext('2d');
+
+        let barChart = new Chart(dataChart, {
+            type: 'bar',
+            data: {
+                labels: [
+                    'Denpasar', 'Badung', 'Karangasem'
+                ],
+                datasets: [{
+                    label: 'Padi',
+                    data: [
+                        10,
+                        10,
+                        100
+                    ],
+
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.2)',
+                        'rgba(255, 0, 0, 0.4)',
+                        'rgba(255, 0, 0, 0.6)'
+                    ],
+                    scaleStartValue: 0,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.container {
+  padding-top: 20px;
+}
+
+.card {
+  margin-top: 5px;
+}
+
+.card-button-color {
+  background-color: #4747d1;
+  color: #fff;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+button.btn {
+  margin-top: auto;
+}
+
+.card-4-value {
+  text-align: center;
+}
+
+#sec2 {
+  margin-top: 10px;
+}
+
+#darkModeButton {
+  margin-top: 15px;
+}
+
+.dark-mode {
+  background-color: #333333 !important;
+  color: #fff !important;
+}
+
+.darkmode--activated .card {
+  color: #fff;
+  background-color: #000 !important;
+  border: 1px solid #e5e5e5;
+}
+
+.darkmode--activated .navbar {
+  color: #fff;
+  background-color: #000 !important;
+}
+
+.darkmode--activated .card a:hover {
+  background-color: #4d4d4d !important;
+}
+
+.darkmode--activated hr {
+  background-color: #fff;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>FE JS</title>
+  </head>
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Front End JavaScript</a>
+    </nav>
+    <div class="container">
+      <h3>OnClick Events</h3>
+      <hr />
+
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title lead">
+              Onclick Change P Color
+            </div>
+            <hr />
+            <p id="ctc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              fugit veniam sapiente dolores. Perferendis, magni quas quaerat
+              nisi, fuga in ullam porro ratione cumque possimus amet a
+              repellendus! Quis, ullam?
+            </p>
+            <button
+              class="btn btn-block card-button-color"
+              onclick="changeTextColor()"
+            >
+              Click Me
+            </button>
+          </div>
+        </div>
+
+        <div class="card" id="cbc">
+          <div class="card-body">
+            <div class="card-title lead">
+              Onclick Change Background Color and Text Color (Disable Dark mode
+              first!)
+            </div>
+            <hr />
+            <p id="p2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              fugit veniam sapiente dolores. Perferendis, magni quas quaerat
+              nisi, fuga in ullam porro ratione cumque possimus amet a
+              repellendus! Quis, ullam?
+            </p>
+            <button
+              class="btn btn-block card-button-color align-self-end"
+              onclick="changeBackgroundColor()"
+              value="0"
+              id="btnch"
+            >
+              Change Me
+            </button>
+          </div>
+        </div>
+
+        <div class="card" id="card3" id="cbc">
+          <div class="card-body">
+            <div class="card-title lead">
+              Onclick Change Background Color and Text Color
+            </div>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              fugit veniam sapiente dolores. Perferendis, magni quas quaerat
+              nisi, fuga in ullam porro ratione cumque possimus amet a
+              repellendus! Quis, ullam?
+            </p>
+            <button
+              class="btn btn-block card-button-color align-self-end"
+              onclick="hide()"
+            >
+              Change Me
+            </button>
+          </div>
+        </div>
+
+        <section id="sec2">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <p class="lead">Value</p>
+                    <hr />
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Eaque nesciunt architecto suscipit aspernatur in
+                        aliquid dolorum ipsam debitis laboriosam unde assumenda
+                        eum, ab eius quis, neque laborum voluptatibus ut
+                        tempora. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Repudiandae dignissimos minima
+                        veritatis illo illum fuga rerum neque fugiat quos at
+                        praesentium, nobis quod asperiores esse magni? Numquam
+                        repellat reprehenderit soluta.
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <h2>Total:</h2>
+                      <h3 id="total" class="card-4-value"></h3>
+                      <hr />
+                      <button class="btn btn-sm btn-primary" onclick="add()">
+                        Add
+                      </button>
+                      <button
+                        class="btn btn-sm btn-primary"
+                        onclick="decrease()"
+                      >
+                        Decrease
+                      </button>
+                      <button class="btn btn-sm btn-primary" onclick="reset()">
+                        Reset
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end div sec 2-->
+        </section>
+      </div>
+      <!--end card deck-->
+    </div>
+    <!--end container-->
+
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
+    <script>
+      new Darkmode().showWidget();
+    </script>
+  </body>
+</html>

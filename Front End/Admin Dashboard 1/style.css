@@ -1,0 +1,284 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+p{
+	font-size: 14px;
+}
+
+
+.jarak{
+	margin-bottom: 10px;
+}
+
+.btn{
+	background-color: #8e0f79;
+	color: #fff;
+}
+
+.navbar{
+	background-color:#8e0f79;
+	margin-bottom: 0px;
+
+}
+
+
+#navbarDropdown ul li a{
+	color: #fff !important;
+}
+
+header{
+	background-color: #732673;
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+footer{
+	background-color: #732673 ;
+	height: 45px;
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+}
+
+footer h6{
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*CSS admin*/
+
+.card{
+	margin-top: 0px;
+	margin-right: 0px;
+}
+
+
+.card-header{
+	background-color: #732673;
+	color: #fff;
+}
+
+
+.container{
+	margin-top: 20px;
+}
+
+
+
+.form-search{
+	width: 100%;
+}
+
+.nav a{
+	color: #fff;
+}
+
+
+table{
+	font-family: 'Raleway', sans-serif;
+	box-shadow: 5px 5px 0px 0px #f2ccff;
+	border-radius: 10px;
+}
+
+.jarakCardModal{
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.jarakPModal{
+	margin-left: 30px;
+}
+
+thead{
+	background-color: #732673;
+	color: #fff;
+	border-radius: 10px;
+}
+
+#navigator .card{
+	background-color: #fff;
+	border: solid 1px #8e0f79;
+	color: #fff;
+	text-align: center;
+}
+
+
+#navigator .card p a{
+	color: #fff;
+	width: 80%;
+}
+
+#navigator .card p a:hover{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+#navigator .card:hover{
+	box-shadow: 5px 5px #f2e6ff;
+	background-color:#fae6ff;
+}
+
+
+#navigator .card img{
+	 margin-bottom: 10px;
+}
+
+#adminTeam .card{
+	box-shadow: 5px 5px #f2e6ff;
+	margin-top: 10px;
+}
+/*CSS admin*/
+
+/*CSS KpForm*/
+
+#headingFormKP{
+	min-height: 350px;
+	padding-bottom: 20px;
+	background-color: #732673;
+	color: #fff;
+	margin-top: -25px;
+}
+
+#headingFormKP h2,h3{
+	padding-top: 20px;
+}
+
+#kpForm{
+	color: black;
+}
+
+#kpForm form button{
+	background-color: #732673;
+	color:#fff; 
+	margin-top: 20px;
+}
+
+#kpForm .container{
+	background-color: #f2e6ff;
+	padding-top: 30px;
+	border-radius: 5px;
+	box-shadow: 5px 5px #e6ccff;
+}
+
+
+#kpForm small{
+	margin-top: 20px;
+	padding-bottom: 15px;
+}
+
+#kpNav nav{
+	background-color: #732673;
+	color: #fff;
+}
+
+/*CSS KpForm*/
+
+/*CSS login*/
+
+#loginForm .card{
+	max-width: 500px;
+	box-shadow:  5px 6px #ffe6ff;
+}
+
+#loginForm button{
+	background-color: #732673;
+	color: #fff;
+	margin-top: 25px;
+	
+}
+
+#loginForm a{
+
+	height: 100%; width: 100%;
+	}
+/*CSS login*/
+
+/*kpTeam */
+
+#kpTeam  .card img{
+	width: 120px;
+    height: 120px;
+	margin-top: 20px;	
+
+}
+
+#kpTeam p{
+	margin-top: 10px;
+}
+
+
+#kpTeam small{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+#kpTeam .card{
+	background-color: #fff;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px #ffe6ff;
+	min-height: 90%;
+	max-height: 90%;
+}
+
+#kpTeam .card:hover{
+	background-color: #ffe6ff;
+}
+
+#kpTeam row p{
+	text-align: left;
+}
+
+
+/* end kpTeam*/
+
+/*kpHomeTugas*/
+#kpHomeTugas .card{
+	margin-top: 20px;
+	box-shadow: 5px 5px #ffe6ff;
+}
+
+#kpHomeTugas ul{
+	margin-top: 20px;
+}
+
+/*end kpHomeTugas*/
+
+/* kpProfileEdit*/
+#kpProfileEdit .btn{
+	margin-top: 10px;
+}
+
+#kpProfileEdit .card{
+	box-shadow: 5px 5px 0px 0px gainsboro;
+}
+/* end kpProfilEdit*/
+
+/* kpProfil */
+#kpProfile .jarak-card{
+	margin-top: 8px;
+}
+
+#kpProfile .card{
+	box-shadow: 3px 3px #e6ccff;
+}
+
+.title-logo img {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+  }
+  
+  .title-logo h5 {
+	
+  }
+
+
+#boxProfil .col-lg-6{
+	border: 1px solid #732673;
+}
+/* end kpProfil */
+

@@ -1,0 +1,99 @@
+header{
+    height: 100%;
+    background-color: #00b300;
+    padding-top: 20px;
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.sub-title{
+    text-align: left;
+}
+
+#dataTable table{
+    box-shadow: 5px 5px 0px 0px gainsboro;
+    border-radius: 3px;
+}
+
+#dataTable table thead{
+    background-color: #00b300;
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    
+    .tahun
+    {
+        background-color: #00b300;
+        color: #fff;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 30px;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00b300;
+    color: white;
+    text-align: center;
+  }
+
+canvas{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
