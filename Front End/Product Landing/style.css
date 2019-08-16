@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #444;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.nav {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar .nav {
+  justify-self: flex-end; /*pull right*/
+  display: flex; /*align horizontal*/
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav a {
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.navbar .nav a:hover {
+  color: #555;
+}
+
+.product-text {
+  text-align: justify;
+  padding-top: 2%;
+}
+
+#product-row {
+  margin-top: 50px;
+}
+
+#ps4-img {
+  min-height: 250px;
+}
+
+.btn {
+  background-color: #444444 !important;
+  color: #fff;
+}
+
+/* Clear floats after image containers */
+
+.product-desc-header-text {
+  text-align: center;
+}
+
+.section2-container {
+  padding: 10%;
+}
+
+.product-desc {
+  padding: 5%;
+}
+
+h2 {
+  padding-top: 1% !important;
+}
