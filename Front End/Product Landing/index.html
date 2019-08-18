@@ -15,6 +15,13 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css" />
     <!--font Awesome-->
     <script src="https://kit.fontawesome.com/4f161c1c95.js"></script>
@@ -34,10 +41,16 @@
     <!--Product-->
     <section class="product">
       <div class="container">
-        <h1 style="padding-top:10px;">Next Generation Console</h1>
+        <h1 class="animated fadeInDown delay-0.4s" style="padding-top:10px;">
+          Next Generation Console
+        </h1>
         <div class="row" id="product-row">
           <div class="col-lg-5">
-            <img src="components/ps1.jpg" id="ps4-img" />
+            <img
+              class="animated fadeInLeft"
+              src="components/ps1.jpg"
+              id="ps4-img"
+            />
           </div>
 
           <div class="col-lg-7">
@@ -55,8 +68,11 @@
       </div>
     </section>
 
+    <!--Product Description Section-->
     <section class="product-desc">
-      <h2 class="product-desc-header-text">Console Redefined</h2>
+      <h2 class="product-desc-header-text" data-aos="fade-in">
+        Console Redefined
+      </h2>
       <hr />
 
       <!--end container-->
@@ -66,27 +82,27 @@
           <div class="col-lg-12" style="padding-bottom: 2%;"></div>
           <!--end col-->
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <img src="components/ps3.jpg" />
           </div>
           <!--end col-->
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <h2>Thin Profile</h2>
             <p class="product-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
               distinctio pariatur accusamus architecto tempore illo molestias
               expedita! Commodi repellendus inventore, quisquam saepe minima,
               magni excepturi natus architecto fugiat, tempore assumenda. Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              ipsum dolor sit, amet consectetur adipisicing elit. S oluta
             </p>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-left">
             <h2>Ummatched Performance</h2>
           </div>
           <!--end col-->
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-in">
             <p class="product-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
               distinctio pariatur accusamus architecto tempore illo molestias
@@ -99,7 +115,7 @@
           </div>
           <!--end col-->
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-in">
             <img src="components/ps1.jpg" />
           </div>
 
@@ -109,12 +125,12 @@
           </div>
           <!--end col-->
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-in">
             <img src="components/vr.png" />
           </div>
           <!--end col-->
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-in">
             <p class="product-text">
               PlayStation VR (PS VR) uses a combination of 3D space and
               independent 3D audio technology to surround the player in a 360°
@@ -149,5 +165,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
