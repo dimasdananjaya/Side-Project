@@ -107,3 +107,26 @@ img {
 h2 {
   padding-top: 1% !important;
 }
+
+.footer {
+  min-height: 150px;
+  background-color: #333;
+}
+
+.social-icons {
+  text-align: center;
+}
+.social-icons li {
+  display: inline-block;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.social-icons li a {
+  border-bottom: none;
+}
+.social-icons li img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
