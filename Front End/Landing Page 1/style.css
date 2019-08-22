@@ -59,5 +59,17 @@ img {
 /**** Models *****/
 
 #models h3 {
-  text-align: center;
+  text-align: left;
+}
+
+#models .btn-primary {
+  background-color: #fff;
+  border: solid 1px #333;
+  color: #333;
+}
+
+#models .btn-primary:hover {
+  background-color: #333;
+  border: solid 1px #333;
+  color: #fff;
 }
